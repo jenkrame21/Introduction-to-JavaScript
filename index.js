@@ -2,12 +2,23 @@
 //Task a: declare a variable called votingAge, console log true if age > 18 (no function required)
 
 
+// const votingAge = 19;
 
-
+// if(votingAge > 18){
+//   console.log("true");
+// }
 
 //Task b: declare a variable and then use a conditional to change the value of that variable based on the value assigned to a second variable (no function required)
 
+// let fruit1 = "Apple";
+// let isTasty = "Yum";
 
+// if(isTasty === "Yum"){
+//   fruit1 = "Delicious";
+// }else {
+//   fruit1 = "Gross";
+// }
+// console.log(fruit1)
 
 
 
@@ -19,6 +30,10 @@
 
 //Task d: Write a function to multiply a*b 
 
+function math(a * b){
+    console.log(math(1,2))
+}
+
 
 
 
@@ -27,8 +42,11 @@
 //Age in Dog years
 //write a function that takes your age and returns it to you in dog years - they say that 1 human year is equal to seven dog years 
 
+// function dogYears(age){
+//     return Math.pow(age,7);
+// }
 
-
+// console.log(dogYears(25));
 
 
 /************************************************************** Task 3 **************************************************************/
@@ -95,9 +113,42 @@
 //60s should be D 
 //and anything below 60 should be F
   
+//that takes = function
 
-  
-  
+// switch (x) {
+//     case x >= 90;
+//     let grade = "A";
+//     return grade
+
+//     case x >= 80;
+//     x = "B";
+
+//     break;
+//     case x >= 70;
+//     x = "C"
+//     break;
+//     case x >= 60;
+//     x = "D"
+//     break;
+//     case x >= 50;
+//     x = "F"
+// }
+// console.log(72);
+
+// function grades(number) {
+//     if(numer >= 90){
+//         //do something
+//     }
+// }
+
+// grades(100)
+
+/* Caveman vs Spaceman
+    1. Plan english(native language too!)
+    2. Try to solve the problem in your own words
+    3. Start coding! Don't over think it or over optimize it at this point
+    4. Once it's working, look at some optimizations (in a few weeks!)
+*/  
 
 /************************************************************** Stretch **************************************************************/
 //Create a function that counts the number of vowels within a string. It should handle both capitalized and uncapitalized vowels.
