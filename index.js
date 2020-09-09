@@ -162,22 +162,20 @@ console.log(random)
 // let kilometers = 1.60934
 
 // function miles(kilometers){
-//     Multiply(miles * 1.60934)
+//     Divide(miles / 1.60934)
 // }
 
-// console.log(3 * kilometers)
+// console.log(3 / kilometers)
 
-var kilometers = parseInt(prompt("Please enter kilometers:"));
+var kilometers = parseInt(prompt("Please enter amount of kilometers:"));
 var miles = kilometers / 1.6;
 console.log(miles + " Miles");
 
 
 
-
-
 //b. Feet to CM - should take the number of feet and convert it to the equal number of centimeters
   
-var feet = parseInt(prompt("Please enter number of feet that you would like to convert:"));
+var feet = parseInt(prompt("Please enter amount of feet that you would like to convert:"));
 var cm = feet * 30.48;
 console.log(cm + " Centimeters");
 
@@ -212,41 +210,40 @@ console.log(annoyingSong());
 //write a javaScript program that takes a mark out of 100 and returns a corisponding letter grade 
 //90s should be A 
 //80s should be B 
-//70s should be Cs 
+//70s should be C
 //60s should be D 
 //and anything below 60 should be F
   
 // NOTES
 //that takes = function
+function myGrade(x){
+    let grade;
+    switch (x) {
+        case x >= 90:
+        grade = "A";
+        return grade
+        
+        case x >= 80:
+        grade = "B";
+        return grade
+    
+        case x >= 70:
+        grade = "C";
+        return grade
+    
+        case x >= 60:
+        grade = "D";
+        return grade
+    
+        case x < 59:
+        grade = "F";
+        return grade
+    }
+    return grade
+}
+console.log(myGrade(87))
 
-// switch (x) {
-//     case x >= 90;
-//     let grade = "A";
-//     return grade
-
-//     case x >= 80;
-//     x = "B";
-
-//     break;
-//     case x >= 70;
-//     x = "C"
-//     break;
-//     case x >= 60;
-//     x = "D"
-//     break;
-//     case x >= 50;
-//     x = "F"
-// }
-// console.log(72);
-
-// function grades(number) {
-//     if(numer >= 90){
-//         //do something
-//     }
-// }
-
-// grades(100)
-
+// NOTES
 /* Caveman vs Spaceman
     1. Plan english(native language too!)
     2. Try to solve the problem in your own words
