@@ -1,37 +1,44 @@
 /************************************************************** Task 1: Warm-up! **************************************************************/
 //Task a: declare a variable called votingAge, console log true if age > 18 (no function required)
 
+//declare a variable
+//use if else statement
+//true if age is greater than 18
+const votingAge = 19;
 
-// const votingAge = 19;
-
-// if(votingAge > 18){
-//   console.log("true");
-// }
+if(votingAge > 18){
+  console.log("true");
+}
 
 //Task b: declare a variable and then use a conditional to change the value of that variable based on the value assigned to a second variable (no function required)
 
-// let fruit1 = "Apple";
-// let isTasty = "Yum";
 
-// if(isTasty === "Yum"){
-//   fruit1 = "Delicious";
-// }else {
-//   fruit1 = "Gross";
-// }
-// console.log(fruit1)
+ var a = 15;
+ var b = 30;
 
+ if (a === 10) {
+    console.log("True!");
+ } else {
+    console.log("False!");
+}
 
 
 //Task c: Convert string ("1999") to integer (1999)  (no function required) // hint look up the Number method
 
+//Declare a variable "1999"
+//Write a console to equal 1999
+var num = "1999";
 
+console.log(num);
 
 
 
 //Task d: Write a function to multiply a*b 
 
-function math(a * b){
-    console.log(math(1,2))
+function Multiply(a, b){
+     var a = 2
+     var b = 3
+    console.log(a * b)
 }
 
 
@@ -42,16 +49,29 @@ function math(a * b){
 //Age in Dog years
 //write a function that takes your age and returns it to you in dog years - they say that 1 human year is equal to seven dog years 
 
-// function dogYears(age){
-//     return Math.pow(age,7);
-// }
+function dogYears(age){
+    return Math.pow(age,7);
+}
 
-// console.log(dogYears(25));
+console.log(dogYears(25));
 
 
 /************************************************************** Task 3 **************************************************************/
 //Dog feeder 
 //takes weight in pounds and age in years (note if the dog is a puppy the age will be a decimal) and returns the number of pounds of raw food to feed in a day.
+
+
+//takes weight in pounds
+//age in years
+//returns the number of pounds of raw food to feed in a day
+
+function hungryDog(age, weight){
+    if(age >= 1){
+        return weight * 0.05{
+    } else if (weight <= 10){
+        return weight * 0.04;
+    }
+ }
 
 //feeding requirements
 // adult dogs at least 1 year 
@@ -67,7 +87,6 @@ function math(a * b){
 
 // when you are finished invoke your function with the weight of 15 lbs and the age of 1 year - if your calculations are correct your result should be 0.44999999999999996
   
-
 
 
 
