@@ -98,14 +98,55 @@ function feedTheDog(age, weight){
 
 
 /************************************************************** Task 4 **************************************************************/
-// Rock, Paper, Sissors
+// Rock, Paper, Scissors
 // Your function should take a string (either rock paper or scissors)
 // it should return you won or you lost based on the rules of the game (you may need to look up the rules if you have not played before)
 // use math.random to determine the computers choice 
 // hint while you can complete this with only conditionals based on strings it may help to equate choice to a number 
 
-  
+// NOTES
+//function is mentioned
+//return you won or lost
+//use math.random to determine random handSymbols
+//equate choice to a number (integer)
+    //****Rules of the Game***//
+        //scissors vs. rock = lost
+        //scissors vs. paper = win
+        //scissors vs. scissors = draw
+        //rock vs. scissors = win
+        //rock vs. paper = lost
+        //rock vs. rock = draw
+        //paper vs. scissors = lost
+        //paper vs. rock = win
+        //paper vs. paper = draw
 
+const rock = "r";
+const paper = "p";
+const scissors = "s";
+var random = Math.floor(Math.random() * 60) + 1;
+
+function handSymbol(rock, paper, scissors){
+    if(rock === r){
+        return "draw";
+    } else if (rock === p){
+        return "lost";
+    } else if (rock === s){
+        return "win";
+    } else if (paper === p){
+        return "draw";
+    } else if (paper === s){
+        return "lost";
+    } else if (paper === r){
+        return "win";
+    } else if (scissors === s){
+        return "draw";
+    } else if (scissors === r){
+        return "lost"
+    } else if (scissors === p){
+        return "win"
+    }
+}
+console.log(random)
 
 
   
@@ -115,12 +156,30 @@ function feedTheDog(age, weight){
 //a. KM to Miles - should take the number of kilometers and convert it to the equal number of miles
 
 
+// NOTES
+//make 1.60934 kilometers = 1 mile
+
+// let kilometers = 1.60934
+
+// function miles(kilometers){
+//     Multiply(miles * 1.60934)
+// }
+
+// console.log(3 * kilometers)
+
+var kilometers = parseInt(prompt("Please enter kilometers:"));
+var miles = kilometers / 1.6;
+console.log(miles + " Miles");
+
+
 
 
 
 //b. Feet to CM - should take the number of feet and convert it to the equal number of centimeters
   
-
+var feet = parseInt(prompt("Please enter number of feet that you would like to convert:"));
+var cm = feet * 30.48;
+console.log(cm + " Centimeters");
 
 
 
@@ -128,9 +187,24 @@ function feedTheDog(age, weight){
 // 99 bottles of soda on the wall
 // create a function called annoyingSong
 // the function should take a starting number as an argument and count down - at each iteration it should log (number) bottles of soda on the wall, (number) bottles of soda, take one down pass it around (number left over) bottles of soda on the wall`
-  
 
+function annoyingSong(){
+    var bottles;
+    var bottlesLeft;
+    for (i = 99; i >= 1; i--){
+        if (i == 1){
+            bottles = "bottle";
+            bottlesLeft = "No bottles of soda on the wall";
+        } else {
+            bottles = "bottles";
+            bottlesLeft = i -1 + "bottles of soda on the wall";
+        } console.log(1+ " " + bottles + " of soda on the wall,");
+        console.log("Take one down, pass it around,");
+        console.log(bottlesLeft);
+    }
+}
 
+console.log(annoyingSong());
 
 
 /************************************************************** Task 7 **************************************************************/
@@ -142,6 +216,7 @@ function feedTheDog(age, weight){
 //60s should be D 
 //and anything below 60 should be F
   
+// NOTES
 //that takes = function
 
 // switch (x) {
@@ -191,8 +266,5 @@ function feedTheDog(age, weight){
 /************************************************************** Stretch **************************************************************/
 //Take Rock, Paper, Sissors further
 //update your rock papers sissors code below to take a prompt from a user using the window object
-
-
-
 
 
